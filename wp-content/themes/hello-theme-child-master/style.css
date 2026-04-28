@@ -1,0 +1,272 @@
+/* 
+Theme Name: Hello Elementor Child
+Theme URI: https://github.com/elementor/hello-theme/
+Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Elementor Team
+Author URI: https://elementor.com/
+Template: hello-elementor
+Version: 1.0.1
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/*for all bottom FAQ sections*/
+    .faq-up-down-arrow .fa-chevron-down:before, .faq-up-down-arrow .fa-chevron-up:before{
+    font-size: 16px;
+}
+
+/*comment form css*/
+.comment-form .form-submit input#submit {
+    border: none !important;
+    border-radius: 3px 3px 3px 3px !important;
+    background-color: #00AED9 !important;
+}
+.comment-form .form-submit input#submit:hover {
+    border: 5px solid red !important;
+    border-radius: 3px 3px 3px 3px !important;
+    background-color: #00AED9 !important;
+}
+/*right sidebar blog list*/
+.blog-list .grid-item {
+    padding: 0 15px;
+    top: 0px !important;
+    position: relative !important;
+}
+
+.content-sec-cls .elementor-widget-text-editor a {
+  text-decoration: underline !important; /* Optional, adds an underline to links */
+}
+/* Style for hover and focus states */
+.content-sec-cls .elementor-widget-text-editor a:hover,
+.content-sec-cls .elementor-widget-text-editor a:focus {
+  color: #0077FF; /* Example hover/focus color with better contrast */
+}
+
+/**************/
+/* Wordpress default single blog css starts here */
+body:not(.elementor-page).single-post #content {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+body:not(.elementor-page).single-post #content h1.entry-title {
+  margin: 0 0 1.5rem;
+  padding-bottom: 0;
+  font-size: 38px;
+  line-height: 1.3em;
+  color: #00477f !important;
+  position:relative;
+}
+/* under line added on headers*/
+body:not(.elementor-page).single-post #content h1.entry-title::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 50px;
+    width: 200px;
+    height: 1px;
+    background-color: #00477f;
+}
+body:not(.elementor-page).single-post #content .page-content h2::after,
+body:not(.elementor-page).single-post #content .post-content h2::after
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 40px;
+    width: 115px;
+    height: 1px;
+    background-color: #00477f;
+}
+/*body:not(.elementor-page).single-post #content .page-content h3::after,
+body:not(.elementor-page).single-post #content .post-content h3::after
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 40px;
+    width: 115px;
+    height: 1px;
+    background-color: #00477f;
+}*/
+/* under line added on headers*/
+body:not(.elementor-page).single-post #content .page-content,
+body:not(.elementor-page).single-post #content .post-content {
+  padding-top: 0px;
+}
+body:not(.elementor-page).single-post #content .page-content p,
+body:not(.elementor-page).single-post #content .post-content p {
+  margin-bottom: 1.25rem;
+  padding-bottom: 0;
+  font-size: 16px;
+  line-height: 1.7em;
+}
+body:not(.elementor-page).single-post #content .page-content img,
+body:not(.elementor-page).single-post #content .post-content img {
+  margin: 1.25rem 0;
+}
+body:not(.elementor-page).single-post #content .page-content h2,
+body:not(.elementor-page).single-post #content .post-content h2 {
+  position:relative;  
+  margin: 0 0 1.25rem;
+  padding-bottom: 0;
+  font-size: 32px;
+  line-height: 1.1em;
+  
+}
+body:not(.elementor-page).single-post #content .page-content h3,
+body:not(.elementor-page).single-post #content .post-content h3 {
+  margin: 0 0 1.25rem;
+  padding-bottom: 0;
+  font-size: 27px;
+  line-height: 1.1em;
+  position:relative;
+}
+body:not(.elementor-page).single-post #content .page-content h4,
+body:not(.elementor-page).single-post #content .post-content h4 {
+  margin: 0 0 1rem;
+  padding-bottom: 0;
+  font-size: 22px;
+  line-height: 1.1em;
+  position:relative;
+}
+body:not(.elementor-page).single-post #content .page-content h5,
+body:not(.elementor-page).single-post #content .post-content h5 {
+  margin: 0 0 0.9rem;
+  padding-bottom: 0;
+  font-size: 20px;
+  line-height: 1.1em;
+  position:relative;
+}
+body:not(.elementor-page).single-post #content .page-content h6,
+body:not(.elementor-page).single-post #content .post-content h6 {
+  margin: 0 0 0.9rem;
+  padding-bottom: 0;
+  font-size: 17px;
+  line-height: 1.1em;
+  position:relative;
+}
+body:not(.elementor-page).single-post #content .page-content ol,
+body:not(.elementor-page).single-post #content .post-content ol {
+  margin: 0 0 1rem;
+  padding-bottom: 0;
+}
+body:not(.elementor-page).single-post #content .page-content ol li,
+body:not(.elementor-page).single-post #content .post-content ol li {
+  margin: 0 0 0.5rem;
+  font-size: 16px;
+  line-height: 1.7em !important;
+}
+body:not(.elementor-page).single-post #content .page-content ul,
+body:not(.elementor-page).single-post #content .post-content ul {
+  margin: 0 0 1rem;
+  padding-bottom: 0;
+}
+body:not(.elementor-page).single-post #content .page-content ul li,
+body:not(.elementor-page).single-post #content .post-content ul li {
+  margin: 0 0 0.5rem;
+  font-size: 16px;
+  line-height: 1.7em !important;
+}
+/* ----- Blockquote ----- */
+body:not(.elementor-page).single-post .page-content blockquote,
+body:not(.elementor-page).single-post .post-content blockquote {
+  margin: 0 0 1.5rem;
+  padding: 0.75rem 1rem;
+  border-left: 4px solid #e6e6e6;
+  background: #f2f2f2;
+  color: #6b7280;
+  font-style: italic;
+  border-radius: 4px;
+}
+body:not(.elementor-page).single-post .page-content blockquote p,
+body:not(.elementor-page).single-post .post-content blockquote p {
+  margin-bottom: 0 !important;
+}
+/* ----- Tables ----- */
+body:not(.elementor-page).single-post .page-content table,
+body:not(.elementor-page).single-post .post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 1.25rem 0;
+  font-size: 0.95rem;
+}
+.resp-table{
+  overflow-x: auto;
+}
+body:not(.elementor-page).single-post .page-content th,
+body:not(.elementor-page).single-post .post-content th,
+body:not(.elementor-page).single-post .page-content td,
+body:not(.elementor-page).single-post .post-content td {
+  border: 1px solid #eee;
+  padding: 0.6rem;
+  text-align: left;
+}
+body:not(.elementor-page).single-post .page-content thead th,
+body:not(.elementor-page).single-post .post-content thead th {
+  background: #f2f2f2;
+  font-weight: 600;
+}
+body:not(.elementor-page).single-post .page-content tr:nth-child(even) td,
+body:not(.elementor-page).single-post .post-content tr:nth-child(even) td { background: #ffffff; }
+
+
+@media (max-width: 980px) {
+  body:not(.elementor-page) .single-post #content {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  body:not( .elementor-page).single-post #content h1.entry-title {
+  font-size: 32px;
+  }
+  body:not( .elementor-page).single-post #content .page-content h2,
+  body:not( .elementor-page).single-post #content .post-content h2 {
+    font-size: 28px;
+  }
+  body:not( .elementor-page).single-post #content .page-content h3,
+  body:not( .elementor-page).single-post #content .post-content h3 {
+    font-size: 24px;
+  }
+  body:not( .elementor-page).single-post #content .page-content h4,
+  body:not( .elementor-page).single-post #content .post-content h4 {
+    font-size: 22px;
+  }
+  body:not( .elementor-page).single-post #content .page-content h5,
+  body:not( .elementor-page).single-post #content .post-content h5 {
+    font-size: 20px;
+  }
+  body:not( .elementor-page).single-post #content .page-content h6,
+  body:not( .elementor-page).single-post #content .post-content h6 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+ body:not( .elementor-page).single-post #content h1.entry-title {
+  font-size: 30px;
+  }
+  body:not( .elementor-page).single-post #content .page-content h2,
+  body:not( .elementor-page).single-post #content .post-content h2 {
+    font-size: 26px;
+  }
+  body:not( .elementor-page).single-post #content .page-content h3,
+  body:not( .elementor-page).single-post #content .post-content h3 {
+    font-size: 22px;
+  }
+  body:not( .elementor-page).single-post #content .page-content h4,
+  body:not( .elementor-page).single-post #content .post-content h4 {
+    font-size: 20px;
+  }
+  body:not( .elementor-page).single-post #content .page-content h5,
+  body:not( .elementor-page).single-post #content .post-content h5 {
+    font-size: 19px;
+  }
+  body:not( .elementor-page).single-post #content .page-content h6,
+  body:not( .elementor-page).single-post #content .post-content h6 {
+    font-size: 18px;
+  }
+}
+/* Wordpress default single blog css ends here */
